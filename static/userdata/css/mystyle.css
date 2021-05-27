@@ -1,0 +1,17 @@
+body{
+    background-color: #fcf4e7 ;
+    color: #433d3c;
+    font-family: "Economica", sans-serif;
+}
+
+.user_info {
+    width:100%
+}
+
+.user_info ol li{
+    padding: 1rem;
+}
+
+.user_info ol li ul li {
+    padding: 5px;
+}

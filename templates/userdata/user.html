@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <title> User Information</title>
+    <link rel="stylesheet" href="{% static 'userdata/css/mystyle.css' %}">
+</head>
+
+<body>
+    <h1>
+        <center> User Details</center>
+    </h1>
+
+    <div class="user_info">
+        <!-- jinja2 Technique -->
+        {% if data %}
+        <ol>
+        {% for entry in data %}
+
+        <li><p>User Info</p>
+        <ul>
+            <li>Firstname : {{ entry.firstname}}</li>
+            <li>Lastname : {{entry.lastname}}</li>
+            <li>Email : {{entry.email}}</li>
+        </ul>
+        </li>
+        {% endfor %}
+        </ol>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
